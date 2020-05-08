@@ -44,8 +44,20 @@ let word = 'planet';
 //     word = ' ' + word;
 // }
 // console.log('>',word);
-const spaceNeeded = 10 - word.length;
-for(let i = spaceNeeded; i>1; i--){
-    word = ' ' + word;
+// const spaceNeeded = 10 - word.length;
+// for(let i = spaceNeeded; i>1; i--){
+//     word = ' ' + word;
+// }
+// console.log('>',word);
+// let a = true;
+// let test = 0;
+// do{
+//     test++;
+//     console.log(test);
+// }while(test > 5);
+
+let tester = [{name:'name', health:100},{name:'name2', health:100},{name:'name3', health:100}];
+for(let index = 0; index < tester.length; index++){
+    const player = tester[index];
+    console.log(player.name);
 }
-console.log('>',word);
