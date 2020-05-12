@@ -21,3 +21,22 @@ const randomDamage = (armor) => {
     return damage;
 }
 console.log(randomDamage());
+
+//Function Declaration
+function isDead(){
+    //logic goes here
+}
+//Function Expression
+const myFunc = function(){
+    //logic goes here
+}
+//Arrow Function
+const myArrowFunc = (param, test) => {
+    //logic goes here
+}
+
+const array1 = [1,2,3,4];
+
+array1.map((value)=>{
+    
+})
