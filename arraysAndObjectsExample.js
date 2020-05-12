@@ -23,23 +23,53 @@
 // addNumbers(1,2,3,4,5,6,7,8,9,10,11,12,13);
 // const tester = [[1,2,3,4,5,6,7],[8,9,10,11,12]]
 // console.log(tester[0].unshift());
-function myFunc(a,b,c,...rest){
-    console.log(rest);
-}
-const obj1 = {name:"Test", age:2, other:{test1:'Test1', test2:'Test2'}};
-const obj2 = {music:"Jazz", anotherProperty: "Yup", name:"My Name"};
-const obj3 = {...obj1,...obj2};
-const arr = [1,11,111,1111]
-myFunc(2,3,...arr)
-console.log(obj3);
-function objectChanger(obj){
-    obj.other = "I was changed";
-}
-const [test1, test2,test3] = arr;
-const {name, age, other} = obj1
-console.log(test1, test2, test3);
-other.test1 = 'I changed';
-console.log(name, age, other);
-console.log(obj1);
-objectChanger(obj1);
-console.log(obj1);
+// function myFunc(a,b,c,...rest){
+//     console.log(rest);
+// }
+// const obj1 = {name:"Test", age:2, other:{test1:'Test1', test2:'Test2'}};
+// const obj2 = {music:"Jazz", anotherProperty: "Yup", name:"My Name"};
+// const obj3 = {...obj1,...obj2};
+// const arr = [1,11,111,1111]
+// myFunc(2,3,...arr)
+// console.log(obj3);
+// function objectChanger(obj){
+//     obj.other = "I was changed";
+// }
+// const [test1, test2,test3] = arr;
+// const {name, age, other} = obj1
+// console.log(test1, test2, test3);
+// other.test1 = 'I changed';
+// console.log(name, age, other);
+// console.log(obj1);
+// objectChanger(obj1);
+// console.log(obj1);
+
+const myArr = [1,2,3,4,5,6,7,8,9,10];
+console.log(myArr.indexOf(3));
+// let test = myArr.reduce((previousVal, currentVal)=>{
+//     console.log('Previous',previousVal);
+//     console.log('Current',currentVal);
+//     return previousVal + currentVal;
+// })
+// console.log('Final', test);
+
+// let filteredResults = myArr.filter((item)=>{
+//     return item % 2 === 0;
+// });
+// console.log(filteredResults);
+const myPlayers = [{name:"Chirpus", health:100},{name:"Chirpus1", health:90},{name:"Chirpus2", health:80},{name:"Chirpus3", health:0}]
+// let alivePlayers=myPlayers.filter((player)=>{
+//     return player.health >0;
+// });
+// console.log(alivePlayers);
+let firstDead = myPlayers.find((player)=>{
+    return player.health > 0;
+});
+console.log(firstDead);
+
+let firstDeadIndex = myPlayers.findIndex((player)=>{
+    return player.health === 0;
+});
+console.log(firstDeadIndex);
+myPlayers.splice(firstDeadIndex,1);
+console.log(myPlayers)

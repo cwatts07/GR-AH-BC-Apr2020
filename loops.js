@@ -56,8 +56,25 @@ let word = 'planet';
 //     console.log(test);
 // }while(test > 5);
 
-let tester = [{name:'name', health:100},{name:'name2', health:100},{name:'name3', health:100}];
-for(let index = 0; index < tester.length; index++){
-    const player = tester[index];
-    console.log(player.name);
+// let tester = [{name:'name', health:100},{name:'name2', health:100},{name:'name3', health:100}];
+// for(let index = 0; index < tester.length; index++){
+//     const player = tester[index];
+//     console.log(player.name);
+// }
+function isDead(number){
+    // if(number <= 0){
+    //     return true
+    // }else{
+    //     return false
+    // }
+    const logic = number <=0;
+    return number <= 0;
+}
+let i = 20;
+while(true){
+    i = i - Math.floor(Math.random() * 5)
+    console.log(i);
+    if(isDead(i)){
+        break;
+    }
 }
