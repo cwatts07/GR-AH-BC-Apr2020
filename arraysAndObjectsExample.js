@@ -57,19 +57,22 @@ console.log(myArr.indexOf(3));
 //     return item % 2 === 0;
 // });
 // console.log(filteredResults);
-const myPlayers = [{name:"Chirpus", health:100},{name:"Chirpus1", health:90},{name:"Chirpus2", health:80},{name:"Chirpus3", health:0}]
 // let alivePlayers=myPlayers.filter((player)=>{
 //     return player.health >0;
 // });
 // console.log(alivePlayers);
-let firstDead = myPlayers.find((player)=>{
-    return player.health > 0;
-});
-console.log(firstDead);
+// let firstDead = myPlayers.find((player)=>{
+//     return player.health > 0;
+// });
+// console.log(firstDead);
 
-let firstDeadIndex = myPlayers.findIndex((player)=>{
-    return player.health === 0;
-});
-console.log(firstDeadIndex);
-myPlayers.splice(firstDeadIndex,1);
-console.log(myPlayers)
+// let firstDeadIndex = myPlayers.findIndex((player)=>{
+//     return player.health === 0;
+// });
+// console.log(firstDeadIndex);
+// myPlayers.splice(firstDeadIndex,1);
+// console.log(myPlayers)
+
+const myPlayers = [{name:"Chirpus", health:100, lowHeath:false},{name:"Chirpus1", health:90, lowHeath:false},{name:"Chirpus2", health:80, lowHeath:false},{name:"Chirpus3", health:0, lowHeath:true}]
+
+
