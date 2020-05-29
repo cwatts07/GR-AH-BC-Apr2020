@@ -1,0 +1,37 @@
+main{
+    margin-top: 20px;
+}
+h2{
+    text-align: center;
+}
+.hide-me{
+    display:none;
+}
+li{
+    list-style: none;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+}
+button{
+    font-size: 20px;
+    cursor: pointer;
+}
+#menu{
+    position: absolute;
+    z-index: 1;
+    background-color: grey;
+    padding: 25px;
+    top:-200px;
+    transition: top 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);;
+}
+#menu.show-me{
+    top:0;
+}
+#menuToggle{
+    position: relative;
+}

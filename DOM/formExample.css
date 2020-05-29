@@ -1,0 +1,130 @@
+@font-face {
+    font-family: "Roobert";
+    src: url('https://brand.twitch.tv/assets/fonts/roobert/Roobert-Bold.otf');
+    src: url('https://brand.twitch.tv/assets/fonts/roobert/Roobert-Light.otf');
+    src: url('https://brand.twitch.tv/assets/fonts/roobert/Roobert-Medium.otf');
+    src: url('https://brand.twitch.tv/assets/fonts/roobert/Roobert-Regular.otf');
+}    
+
+* {
+    font-family: "Roobert";
+    color: #F0F0FF;
+    font-size: large;
+}
+
+body {
+    background-color: #9146FF ;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+.box {
+    flex-direction: column;
+    border-left: 15px solid #F0F0FF;
+    border-bottom: 15px solid #F0F0FF;
+    display: flex;
+    margin-top: 5%;
+    padding: 20px;
+    justify-content: center; 
+}
+
+a {
+    text-decoration: none;
+}
+
+.form-element{
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: #F0F0FF;
+    width: 310px;
+    height: 50px;
+    border-bottom: 1px solid #F0F0FF;
+    justify-content: space-around;
+    padding: 5px;
+}
+
+.form-element-link{
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: #F0F0FF;
+    width: 310px;
+    height: 50px;
+    justify-content: space-around;
+    padding: 5px;
+}
+
+.form-element-submit{
+    border: 0;
+    outline: 0;
+    color: black;
+    width: 310px;
+    height: 50px;
+    justify-content: space-around;
+    border-radius: 10px;
+    -webkit-appearance: none;
+    font-size: x-large;
+    font-weight: bolder;
+    justify-content: center;
+}
+
+::placeholder {
+    color: #F0F0FF;
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+.form-element {
+    display: flex;
+    
+}
+
+.logo {
+    display: flex;
+    /* border: 5px solid #F0F0FF */
+    /* Used for figuring out flex - ignore */
+    
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    /* border: 5px solid #F0F0FF */
+    /* Used for figuring out flex - ignore */
+}
+
+.form-choice-login {
+    border-bottom: 1px solid #F0F0FF;
+    padding: 5px;
+}
+
+.form-choice-signup {
+    border-bottom: 1px solid #F0F0FF;
+    padding: 5px;
+}
+
+.choice {
+    display: flex;
+    justify-content: space-around;
+}
+
+.choice a:hover {
+    color: black;
+}
+
+.fb-logo {
+    display: flex;
+    height: 25px;
+    width: 25px;
+}
+
+.alt-login {
+    display: flex;
+    background-color: black;
+    border-radius: 15px;
+    padding: 15px;
+    justify-content: center;
+}
