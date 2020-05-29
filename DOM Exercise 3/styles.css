@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+}
+.circle{
+    height: 30px;
+    width: 30px;
+    border-radius: 20px;
+    background-color: blue;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+body{
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input{
+    font: 1em sans-serif;
+    width: 90px;
+    padding-left: 35%;
+}
+button{
+    font: 1em sans-serif;
+    z-index: 2;
+}
+#down{
+    transform: rotate(180deg)
+}
+.inputContainer{
+    display: inline-flex;
+    flex-direction: column;
+}
+.formContainer{
+    display: flex;
+    align-items: stretch;
+}
+#start{
+    background-color: green;
+}
+#stop{
+    background-color: red;
+}
